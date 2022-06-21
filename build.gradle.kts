@@ -25,6 +25,16 @@ dependencies {
 	runtimeOnly("com.h2database:h2")
 	runtimeOnly("mysql:mysql-connector-java")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	implementation("com.squareup.retrofit2:retrofit:2.9.0")
+	implementation("com.squareup.retrofit2:converter-jackson:2.9.0")
+	implementation("com.squareup.retrofit2:adapter-rxjava2:2.9.0")
+	implementation("com.squareup.okhttp3:logging-interceptor:4.9.1")
+	implementation("com.squareup.okhttp3:okhttp:4.9.1")
+
+	implementation("io.github.resilience4j:resilience4j-retrofit:1.7.1")
+	implementation("io.github.resilience4j:resilience4j-retry:1.7.1")
+	implementation("io.github.resilience4j:resilience4j-circuitbreaker:1.7.1")
+
 }
 
 tasks.withType<KotlinCompile> {
